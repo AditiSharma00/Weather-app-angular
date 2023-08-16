@@ -1,0 +1,9 @@
+<app-loader></app-loader>
+<div className="app-box">
+  <app-header [currentUnitSystem]="unitSystem" (changeUnit)="changeUnit($event)">
+  </app-header>
+  <app-search-bar></app-search-bar>
+  <div class="content-box">
+    <router-outlet></router-outlet>
+  </div>
+</div>
